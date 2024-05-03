@@ -1,0 +1,12 @@
+:root {
+  --color-shade-100: #093922;
+  --color-shade-400: #e4ebf2;
+  --color-text-200: #787878;
+  --color-primary-100: #21a038;
+  --color-shade-200: #f6fbf7;
+  --color-shade-500: #e3ede3;
+  --color-text-100: #2c3136;
+  --color-shade-300: #f2f3ef;
+  --color-shade-600: #fff;
+  --color-shade-transparent-600-10: rgba(255, 255, 255, 0.1);
+}
