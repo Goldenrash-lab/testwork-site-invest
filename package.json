@@ -1,0 +1,20 @@
+{
+  "name": "testwork-site-invest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://goldenrash-lab.github.io/testwork-site-invest",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "modern-normalize": "^2.0.0"
+  }
+}
