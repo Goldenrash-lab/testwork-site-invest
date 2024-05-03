@@ -26,6 +26,20 @@
             </a>
           </div>
           <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Про нас</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Переваги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Калькулятор прибутку</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Розрахувати прибуток</a>
+              </li>
+            </ul>
             <button class="nav__menu-btn" type="button">
               <svg class="nav__btn-svg" width="24" height="24">
                 <use href="/src/images/sprite.svg#icon-menu"></use>
@@ -37,10 +51,16 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
           <div class="hero__wrapper">
             <div class="hero__box-text">
-              <h1 class="hero__title">Інвестувати проще, ніж здається!</h1>
+              <h1 class="hero__title">
+                Інвестувати<span class="hero__title-svg"
+                  ><svg class="" width="45" height="45">
+                    <use href="/src/images/sprite.svg#icon-icon"></use></svg
+                ></span>
+                проще, ніж здається!
+              </h1>
               <p class="hero__subtitle">
                 Кожен клієнт має доступ до нової інвестиційної платформи з можливістю отримання доходу. Будь ласка,
                 пройдіть просту реєстрацію на сайті, а також ознайомтеся з інформацією нижче, щоб дізнатися, як
@@ -48,6 +68,12 @@
               </p>
             </div>
             <div class="hero__box-form">
+              <img
+                class="hero__box-image"
+                srcset="/src/images/cartoon.png, /src/images/cartoon@2x.png 2x"
+                src="/src/images/cartoon.png"
+                alt="cartoon image"
+              />
               <form class="hero__form">
                 <h4 class="hero__form-title">Почніть зараз</h4>
                 <label class="hero__form-label">
@@ -70,22 +96,22 @@
               </form>
             </div>
           </div>
-        </div>
-        <div class="rate__box-rate">
-          <ul class="rate__rate-list">
-            <li class="rate__rate-item">
-              <h4 class="rate__rate-title">75+</h4>
-              <p class="rate__rate-subtitle">Клієнтів</p>
-            </li>
-            <li class="rate__rate-item">
-              <h4 class="rate__rate-title">4.9</h4>
-              <p class="rate__rate-subtitle">Рейтинг Довіри</p>
-            </li>
-            <li class="rate__rate-item">
-              <h4 class="rate__rate-title">100</h4>
-              <p class="rate__rate-subtitle">Інвестицій</p>
-            </li>
-          </ul>
+          <div class="rate__box-rate">
+            <ul class="rate__rate-list">
+              <li class="rate__rate-item">
+                <h4 class="rate__rate-title">75+</h4>
+                <p class="rate__rate-subtitle">Клієнтів</p>
+              </li>
+              <li class="rate__rate-item">
+                <h4 class="rate__rate-title">4.9</h4>
+                <p class="rate__rate-subtitle">Рейтинг Довіри</p>
+              </li>
+              <li class="rate__rate-item">
+                <h4 class="rate__rate-title">100</h4>
+                <p class="rate__rate-subtitle">Інвестицій</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -93,26 +119,47 @@
           <div class="about__wrapper">
             <h2 class="about__title">Про нас</h2>
             <ul class="about__list">
-              <li class="about__item">
-                <h4 class="about__item-title">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</h4>
-                <p class="about__item-text">
-                  Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                  гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але
-                  й прижилася в електронному верстуванні, залишаючись по суті незмінною.
-                </p>
-                <img src="/src/images/sphere.png" alt="sphere photo" class="about__item-img" />
-              </li>
-              <li class="about__item">
-                <h4 class="about__item-title">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</h4>
-                <p class="about__item-text">
-                  Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                  гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але
-                  й прижилася в електронному верстуванні, залишаючись по суті незмінною.
-                </p>
-                <img src="/src/images/man.png" alt="man photo" class="about__item-img" />
-              </li>
-              <li class="about__item">
-                <img src="/src/images/cloud.png" alt="cloud photo" class="about__item-img" />
+              <div class="about__hidden-wrap">
+                <li class="about__item">
+                  <div class="about__wrap">
+                    <h4 class="about__item-title">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</h4>
+                    <p class="about__item-text">
+                      Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв
+                      шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                      століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
+                    </p>
+                  </div>
+                  <img
+                    srcset="/src/images/sphere.png, /src/images/sphere@2x.png 2x"
+                    src="/src/images/sphere.png"
+                    alt="sphere photo"
+                    class="about__item-img"
+                  />
+                </li>
+                <li class="about__item">
+                  <div class="about__wrap">
+                    <h4 class="about__item-title">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</h4>
+                    <p class="about__item-text">
+                      Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв
+                      шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                      століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
+                    </p>
+                  </div>
+                  <img
+                    srcset="/src/images/man.png, /src/images/man@2x.png 2x"
+                    src="/src/images/man.png"
+                    alt="man photo"
+                    class="about__item-img"
+                  />
+                </li>
+              </div>
+              <li class="about__item green-item">
+                <img
+                  srcset="/src/images/cloud.png, /src/images/cloud@2x.png 2x"
+                  src="/src/images/cloud.png"
+                  alt="cloud photo"
+                  class="about__item-img"
+                />
                 <h4 class="about__item-title">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</h4>
                 <p class="about__item-text">
                   Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
@@ -152,7 +199,6 @@
                   <p class="benefits__item-text">Дата виплати - 05.06.2024</p>
                 </li>
               </ul>
-              <!-- If we need pagination -->
               <div class="pagination"></div>
             </div>
             <button class="benefits__btn">Вкластися зараз</button>
@@ -161,32 +207,34 @@
       </section>
       <section class="profit">
         <div class="container">
-          <h2 class="profit__title">Розрахуйте свій прибуток</h2>
           <div class="profit__wrapper">
-            <ul class="profit__list">
-              <li class="profit__item">
-                <div class="profit__box-up">
-                  <h4 class="profit__subtitle">Сума інвестицій</h4>
-                  <p class="profit__sum">29 506</p>
-                </div>
-                <input class="profit__range slider-progress" type="range" min="5000" max="50000" value="29506" />
-                <div class="profit__box-down">
-                  <p class="profit__lower-price">5000</p>
-                  <p class="profit__upper-price">50000</p>
-                </div>
-              </li>
-              <li class="profit__item">
-                <div class="profit__box-up">
-                  <h4 class="profit__subtitle">Сума прибутку</h4>
-                  <p class="profit__sum">96 123</p>
-                </div>
-                <input class="profit__range slider-progress" type="range" min="35000" max="210000" value="96123" />
-                <div class="profit__box-down">
-                  <p class="profit__lower-price">35000</p>
-                  <p class="profit__upper-price">210000</p>
-                </div>
-              </li>
-            </ul>
+            <div>
+              <h2 class="profit__title">Розрахуйте свій прибуток</h2>
+              <ul class="profit__list">
+                <li class="profit__item">
+                  <div class="profit__box-up">
+                    <h4 class="profit__subtitle">Сума інвестицій</h4>
+                    <p class="profit__sum">29 506</p>
+                  </div>
+                  <input class="profit__range slider-progress" type="range" min="5000" max="50000" value="29506" />
+                  <div class="profit__box-down">
+                    <p class="profit__lower-price">5000</p>
+                    <p class="profit__upper-price">50000</p>
+                  </div>
+                </li>
+                <li class="profit__item">
+                  <div class="profit__box-up">
+                    <h4 class="profit__subtitle">Сума прибутку</h4>
+                    <p class="profit__sum">96 123</p>
+                  </div>
+                  <input class="profit__range slider-progress" type="range" min="35000" max="210000" value="96123" />
+                  <div class="profit__box-down">
+                    <p class="profit__lower-price">35000</p>
+                    <p class="profit__upper-price">210000</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="profit__result">
               <h4 class="profit__result-title">Виплата від інвестицій</h4>
               <p class="profit__result-price">100 000</p>
