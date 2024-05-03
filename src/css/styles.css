@@ -687,3 +687,11 @@
     font-size: 16px;
   }
 }
+
+.invalid {
+  border: 2px solid #ed6a5e;
+}
+
+.valid {
+  border: 2px solid #4ce0b3;
+}
